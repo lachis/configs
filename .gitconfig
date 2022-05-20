@@ -1,0 +1,21 @@
+[user]
+	email = lachlan.jordan@protonmail.com
+	name = Lachlan Jordan
+[alias]
+   cob = checkout -b
+   co = checkout
+   br = branch
+   ci = commit
+   st = status
+   aa = add .
+   cm = commit -m
+   pl = pull
+   dev = checkout develop
+   cirt = checkout feature/cirt-develop
+   cirt-pull = !git cirt && git pl
+   dev-pull = !git dev && git pl
+   D = branch -D
+   cirt-fresh = !git cirt-pull && git cob
+   dev-fresh = !git dev-pull && git cob
+   rpush = !git push --set-upstream origin
+   acm = !git aa && git cm
