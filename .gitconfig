@@ -11,11 +11,11 @@
    cm = commit -m
    pl = pull
    dev = checkout develop
-   cirt = checkout feature/cirt-develop
-   cirt-pull = !git cirt && git pl
+   master = checkout master
    dev-pull = !git dev && git pl
+   master-pull = !git master && git pl
    D = branch -D
-   cirt-fresh = !git cirt-pull && git cob
    dev-fresh = !git dev-pull && git cob
+   master-fresh = !git master-pull && git cob
    rpush = !git push --set-upstream origin
    acm = !git aa && git cm
